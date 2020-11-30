@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, inital-scale=1.0"/>
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Khand&display=swap" rel="stylesheet">
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+		<!-- Google Fonts -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+		<!-- Bootstrap core CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Material Design Bootstrap -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+		<title>RESUME FORM</title>
+	</head>
+	<body>
+		<div class="title"><h2>COMPANY RESUME PAGE</h2></div>
+			
+		<form>
+			<!-- here is for the name and the surname -->
+			<div class="row">
+				<div class="col"> <label for="exampleNameInput">Adınız: </label>
+				  <input type="text" class="form-control" placeholder="First name">
+				</div>
+				<div class="col"> <label for="exampleSurnameInput">Soyadınız: </label>
+				  <input type="text" class="form-control" placeholder="Last name">
+				</div>
+			</div>
+			<!-- here is for the e-mail and password-->
+			<div class="form-group">
+			  <label for="exampleInputEmail1">Email: </label>
+			  <input type="email" class="form-control col-md-4" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+			  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+			</div>
+			
+			<!-- here is the simple date picker with mdbootstrap -->
+			<label for="exampleSurnameInput">Mezuniyet Tarihiniz:</label>
+			<div class="md-form md-outline input-with-post-icon datepicker col-md-4" id="mydatepicker">
+				<input placeholder="dd/mm/yyyy" type="date" id="dateButton" class="form-control">
+			  </div>
+			
+			<!-- here is for select to the Universities -->
+			<label for="exampleSurnameInput">Eğitim Bilgisi:</label>
+			<select class="form-control col-md-4" > 
+				<option>Üniversitenizi seçiniz.</option>
+				<option>Abdullah Gül Üniversitesi</option>
+				<option>Adıyaman Üniversitesi</option>
+				<option>Afyon Kocatepe Üniversitesi</option>
+				<option>Ağrı İbrahim Çeçen Üniversitesi</option>
+				<option>Akdeniz Üniversitesi</option>
+				<option>Aksaray Üniversitesi</option>
+				<option>Amasya Üniversitesi</option>
+				<option>Anadolu Üniversitesi</option>
+				<option>Ankara Sosyal Bilimler Üniversitesi</option>
+				<option>Ankara Üniversitesi</option>
+				<option>Ankara Yıldırım Beyazıt Üniversitesi</option>
+				<option>Ardahan Üniversitesi</option>
+				<option>Artvin Çoruh Üniversitesi</option>
+				<option>Atatürk Üniversitesi</option>
+				<option>Aydın Adnan Menderes Üniversitesi</option>
+				<option>Balıkesir Üniversitesi</option>
+				<option>Bartın Üniversitesi</option>
+				<option>Bilecik Şeyh Edebali Üniversitesi</option>
+				<option>Bitlis Eren Üniversitesi</option>
+				<option>Boğaziçi Üniversitesi</option>
+				<option>Bolu Abant İzzet Baysal Üniversitesi</option>
+				<option>Bursa Teknik Üniversitesi</option>
+				<option>Bursa Uludağ Üniversitesi</option>
+				<option>Çanakkale Onsekiz Mart Üniversitesi</option>
+				<option>Çukurova Üniversitesi</option>
+				<option>Dicle Üniversitesi</option>
+				<option>Dokuz Eylül Üniversitesi</option>
+				<option>Ege Üniversitesi</option>
+				<option>Erciyes Üniversitesi</option>
+				<option>Erzurum Teknik Üniversitesi	</option>
+				<option>Eskişehir Osmangazi Üniversitesi</option>
+				<option>Fırat Üniversitesi</option>
+				<option>Galatasaray Üniversitesi</option>
+				<option>Gazi Üniversitesi</option>
+				<option>Gaziantep Üniversitesi</option>
+				<option>Hacettepe Üniversitesi</option>
+				<option>Harran Üniversitesi</option>
+				<option>Hatay Mustafa Kemal Üniversitesi</option>
+				<option>Hitit Üniversitesi</option>
+				<option>İnönü Üniversitesi</option>
+				<option>İstanbul Teknik Üniversitesi</option>
+				<option>İstanbul Üniversitesi</option>
+				<option>Kafkas Üniversitesi</option>
+				<option>Kahramanmaraş Sütçü İmam Üniversitesi</option>
+				<option>Karadeniz Teknik Üniversitesi</option>
+				<option>Kastamonu Üniversitesi</option>
+				<option>Kocaeli Üniversitesi</option>
+				<option>Manisa Celal Bayar Üniversitesi</option>
+				<option>Mardin Artuklu Üniversitesi</option>
+				<option>Marmara Üniversitesi</option>
+				<option>Mimar Sinan Güzel Sanatlar Üniversitesi</option>
+				<option>Necmettin Erbakan Üniversitesi</option>
+				<option>Nevşehir Hacı Bektaş Veli Üniversitesi</option>
+				<option>Ondokuz Mayıs Üniversitesi</option>
+				<option>Orta Doğu Teknik Üniversitesi</option>
+				<option>Pamukkale Üniversitesi</option>
+				<option>Sakarya Üniversitesi</option>
+				<option>Selçuk Üniversitesi</option>
+				<option>Sivas Cumhuriyet Üniversitesi</option>
+				<option>Süleyman Demirel Üniversitesi</option>
+				<option>Tokat Gaziosmanpaşa Üniversitesi</option>
+				<option>Trakya Üniversitesi</option>
+				<option>Türk-Alman Üniversitesi</option>
+				<option>Van Yüzüncü Yıl Üniversitesi</option>
+				<option>Yıldız Teknik Üniversitesi</option>
+				<option>Yozgat Bozok Üniversitesi</option>
+			</select>
+			<!-- here is for to gender options -->
+			<div class="form-group">
+				<legend class="col-form-label col-sm-2 pt-0">Cinsiyet</legend>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+					<label class="form-check-label" for="gridRadios1">		Kadın		  </label>
+				</div>	
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+					<label class="form-check-label" for="gridRadios1">		  Erkek			</label>
+				</div>		
+			</div>
+			<!-- here is for attach the resume document -->
+			<div class="form-group">
+				<label for="exampleFormControlFile1">Özgeçmişinizi ekleyin</label>
+				<input type="file" class="form-control-file" id="exampleFormControlFile1">
+			</div>
+			<!-- submit area -->
+			<div class="form-group form-check">
+				<input type="checkbox" class="form-check-input" id="exampleCheck1">
+				<label class="form-check-label" for="exampleCheck1">Kabul ediyorum.</label>				
+			</div>		  
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+
+		<script src="./app.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<!-- Bootstrap tooltips -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+		<!-- Bootstrap core JavaScript -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+		<!-- MDB core JavaScript -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	</body>
+</html>

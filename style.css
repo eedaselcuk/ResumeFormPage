@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(246, 235, 255) 0%, rgba(251, 238, 230 ) 35%, rgba(170, 194, 226 ) 100%);
+    font-family: 'Khand', sans-serif;
+}
+
+.title{
+    font-size: 45px;
+    text-align: center;
+    margin-top: 4%;
+}
+
+form {
+    font-family: 'Khand', sans-serif;
+    font-size: 25px;
+    margin: 5%;
+    border-style: groove;
+    border-color: orchid;
+    border-style: dotted;
+    border-width: thin;
+}
+
+#emailHelp {
+    font-size: 14px;
+}
+ #dateButton {
+    background-color:white;
+}
