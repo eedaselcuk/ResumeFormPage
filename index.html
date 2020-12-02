@@ -20,32 +20,32 @@
 	<body>
 		<div class="title"><h2>COMPANY RESUME PAGE</h2></div>
 			
-		<form>
+		<form id="resume">
 			<!-- here is for the name and the surname -->
 			<div class="row">
 				<div class="col"> <label for="exampleNameInput">Adınız: </label>
-				  <input type="text" class="form-control" placeholder="First name">
+				  <input type="text" class="form-control" placeholder="First name" id="name">
 				</div>
 				<div class="col"> <label for="exampleSurnameInput">Soyadınız: </label>
-				  <input type="text" class="form-control" placeholder="Last name">
+				  <input type="text" class="form-control" placeholder="Last name" id="surname">
 				</div>
 			</div>
 			<!-- here is for the e-mail and password-->
 			<div class="form-group">
 			  <label for="exampleInputEmail1">Email: </label>
-			  <input type="email" class="form-control col-md-4" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+			  <input type="email" class="form-control col-md-4" id="email" aria-describedby="emailHelp" placeholder="Enter email">
 			  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 			</div>
 			
 			<!-- here is the simple date picker with mdbootstrap -->
 			<label for="exampleSurnameInput">Mezuniyet Tarihiniz:</label>
-			<div class="md-form md-outline input-with-post-icon datepicker col-md-4" id="mydatepicker">
+			<div class="md-form md-outline input-with-post-icon datepicker col-md-4" id="datepick">
 				<input placeholder="dd/mm/yyyy" type="date" id="dateButton" class="form-control">
 			  </div>
 			
 			<!-- here is for select to the Universities -->
 			<label for="exampleSurnameInput">Eğitim Bilgisi:</label>
-			<select class="form-control col-md-4" > 
+			<select class="form-control col-md-4" id="faculty"> 
 				<option>Üniversitenizi seçiniz.</option>
 				<option>Abdullah Gül Üniversitesi</option>
 				<option>Adıyaman Üniversitesi</option>
@@ -118,25 +118,25 @@
 			<div class="form-group">
 				<legend class="col-form-label col-sm-2 pt-0">Cinsiyet</legend>
 				<div class="form-check">
-					<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+					<input class="form-check-input" type="radio" name="gender" id="gender1" value="option1" checked>
 					<label class="form-check-label" for="gridRadios1">		Kadın		  </label>
 				</div>	
 				<div class="form-check">
-					<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+					<input class="form-check-input" type="radio" name="gender" id="gender2" value="option1" checked>
 					<label class="form-check-label" for="gridRadios1">		  Erkek			</label>
 				</div>		
 			</div>
 			<!-- here is for attach the resume document -->
 			<div class="form-group">
 				<label for="exampleFormControlFile1">Özgeçmişinizi ekleyin</label>
-				<input type="file" class="form-control-file" id="exampleFormControlFile1">
+				<input type="file" class="form-control-file" id="resumeFile">
 			</div>
 			<!-- submit area -->
 			<div class="form-group form-check">
-				<input type="checkbox" class="form-check-input" id="exampleCheck1">
+				<input type="checkbox" class="form-check-input" id="check">
 				<label class="form-check-label" for="exampleCheck1">Kabul ediyorum.</label>				
 			</div>		  
-			<button type="submit" class="btn btn-primary">Submit</button>
+			<button type="submit" id="submit" class="btn btn-primary">Submit</button>
 		</form>
 
 		<script src="./app.js"></script>
