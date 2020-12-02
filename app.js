@@ -10,8 +10,9 @@ $('.datepicker').datepicker({
     clear: 'Clear selection',
     close: 'Cancel'
     })
-    
+
 const sendIt = function(){
+    
     document.getElementById('submit').addEventListener('click', send);
 }
 
@@ -32,11 +33,30 @@ const validate = function(e) {
     const valid = true;
 
     const name = document.getElementById('name');
+
+    if (name.value === "") {
+        alert("Adınızı giriniz.");
+    }
     const surname = document.getElementById('surname');
+
+    if (surname.value === "") {
+        alert("Soyadınızı giriniz.");
+    }
+
     const email = document.getElementById('email');
+
+    if (email.value === "") {
+        alert("email adresinizi giriniz.");
+    }
+
     const date = document.getElementById('datepick');
     const faculty = document.getElementById('faculty');
     const file = document.getElementById('resumeFile');
+
+    if(file.value === "") {
+        alert("Özgeçmiş dosyanızı yüklemelisiniz.");
+    }
+
     const checkCon = document.getElementById('check');
 
     if(!checkCon.checked) {
@@ -47,6 +67,7 @@ const validate = function(e) {
     return valid;
 }
 
+document.addEventListener('DOMContentLoaded', sendIt);
 
 // CHECKBOX controller 
 
